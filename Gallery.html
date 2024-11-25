@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worldwidebillones</title>
+<link rel="icon" href="transparent-boy.gif" type="image/x-icon">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+        background: linear-gradient(rgb(168, 154, 248), rgb(55, 1, 127));
+        cursor: url(seaurchin.png), auto;
+        background-blend-mode: hard-light; 
+        color: #fff;
+        font-family: 'Press Start 2P', cursive;
+        text-align: center;
+        margin: 0;
+        height: 470vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Header */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgb(168, 154, 248) url("muk-pokemon.gif") repeat;
+        background-size: 90px;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    header h1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #fff;
+        margin: 0;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img {
+        max-width: 59px;
+        margin-right: 10px;
+    }
+
+    /* Navigation */
+    nav ul {
+        list-style-type: none;
+        margin: 10px 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+        font-size: 1rem;
+        text-decoration: none;
+        transition: color 0.6s;
+    }
+
+    nav ul li a:hover {
+        color: #f8b0ff;
+    }
+
+    /* Main Content Layout */
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Centered Information Box */
+    .info-box {
+        padding: 20px;
+        border: 4px solid rgb(81, 51, 249);
+        background-color: rgb(137, 119, 239);
+        max-width: 600px;
+        text-align: left;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+   .pics {
+    margin-right: 50px;
+    margin-left: 50px;
+
+    }
+ .pics img {
+        border-radius:10px;
+        box-shadow: 0 5px 6px rgba(1, 1, 1, 1)
+        height: auto;
+        width:200px;
+        margin-right: 10px;
+        margin-left: 40px;
+        margin: bottom 10px;
+    
+    }
+    .pics img:hover {
+        transform: scale (1.1);
+    }
+
+    
+    .footer {
+        text-align: center;
+        color: #fff;
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const fadeInElements = document.querySelectorAll(".fade-in");
+
+        const handleScroll = () => {
+            fadeInElements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                    el.classList.add("visible");
+                }
+            });
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        handleScroll();
+    });
+</script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="transparent-boy.gif" alt="Logo" class="logo">
+            <h1>WORLD WIDE BILLONES</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Aboutme.html">About me</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Hobbies.html">Hobbies/Awesome Stuff</a></li>
+                <li><a href="Special.html">Special Mentions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="info-box fade-in">
+            <h2>!PicturezzZ!</h2>
+            <p>Welcome to my Gallery that are full of Silly Photos of mine!</p>
+        </div>
+    </main>
+
+<div class="pics">
+    <img src="74e09b55-e1cf-4aed-b442-ddfb34c3bbd7.jpeg" alt="piks">
+    <img src="fbadded3-db7f-4a02-a8df-412ebd7b3496.jpeg" alt="piks">
+    <img src="ef0eb453-7779-4d84-a467-6afada939b8e.jpeg" alt="piks">
+    <img src="e01b05fa-c109-4bf0-aac8-e5a7e3dfe80a.jpeg" alt="piks">
+    <img src="d253febe-2eff-4f0e-9087-05310a0f4ab2.jpeg" alt="piks">
+    <img src="50c90ca7-84f4-43c6-bed3-4c6da092a639.jpeg" alt="piks">
+    <img src="49ba2b2f-2ca5-4f5e-add5-faa81dc28c9f.jpeg" alt="piks">
+    <img src="6d8ef936-da0f-4a75-a942-c67f421c3b6a.jpeg" alt="piks">
+    <img src="d19983a4-c6cd-4a10-8ab6-ab860ce84afc.jpeg" alt="piks">
+    <img src="ca292ae4-191f-4806-83cd-2502ba1db6c5.jpeg" alt="piks">
+    <img src="8805ab11-814e-4254-bbdf-905820869302.jpeg" alt="piks">
+    <img src="901a814d-71a3-43cd-b5bd-dd5adc92044d.jpeg" alt="piks">
+    <img src="525b14f8-49ce-4143-9a57-ffb10f15b50a.jpeg" alt="piks">
+    <img src="4a88d0fe-0c38-4fc1-ab4d-ea330abb436c.jpeg" alt="piks">
+    <img src="4e5b3cac-0fb7-4c8e-93be-77a575e08fa2.jpeg" alt="piks">
+    <img src="6b69505c-87f8-4abc-9e9b-408049e56f34.jpeg" alt="piks">
+    <img src="6c0b8fc9-6e31-40bc-8e3a-23bf2ba842de.jpeg" alt="piks">
+    <img src="9a9ad4e0-ea78-4151-8592-382cfb667f9f.jpeg" alt="piks">
+    <img src="36cdfe2f-3b80-4276-8c3e-52737d95db09.jpeg" alt="piks">
+    <img src="55ae996a-623e-46a4-b598-fdc0769b5841.jpeg" alt="piks">
+    <img src="792c4e61-ce66-48bc-b416-cc8825674cb7.jpeg" alt="piks">
+    <img src="11888a45-69fc-4bbd-8ef5-7a7c3a29423d.jpeg" alt="piks">
+    <img src="44877840-42da-457b-b91f-a171fb8fa187.jpeg" alt="piks">
+    <img src="a9d28c5e-a10b-41f7-a900-63cab3bfdbd1.jpeg" alt="piks">
+    <img src="f8ee9bf6-1093-430f-8723-b97f72d52bf8.jpeg" alt="piks">
+    <img src="d0c58388-701b-4bde-9f39-94eed5763df8 (1).jpeg" alt="piks">
+    <img src="e6a7a799-2246-49df-b6a7-16d3ac7ea923 (1).jpeg" alt="piks">
+</div>
+<br>
+
+<img src="hero-omori-sleep.gif" alt="Window Purple" style="width:40px;height:50px;">
+
+<br>
+    <div class="footer">
+        <p>This website was made by Aldrich Billones. This is his work for his Finals 1st term @2024</p>
+    </div>
+</body>
+</html>

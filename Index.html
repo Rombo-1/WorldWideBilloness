@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worldwidebillones</title>
+<link rel="icon" href="transparent-boy.gif" type="image/x-icon">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body{
+        background: linear-gradient(rgb(168, 154, 248),rgb(55, 1, 127));
+       
+        cursor: url(seaurchin.png), 0 0, auto;
+        background-blend-mode: hard-light; 
+        color: #fff;
+        font-family: 'Press Start 2P', cursive;
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+    }
+
+
+
+    /* Header */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgb(168, 154, 248) url("muk-pokemon.gif") repeat;
+        background-size: 90px;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    header h1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #fff;
+        margin: 0;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img {
+        max-width: 59px;
+        margin-right: 10px;
+    }
+
+    /* Navigation */
+    nav ul {
+        list-style-type: none;
+        margin: 10px 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+        font-size: 1rem;
+        text-decoration: none;
+        transition: color 0.6s;
+    }
+
+    nav ul li a:hover {
+        color: #f8b0ff;
+    }
+
+    /* Main Content Layout */
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 150px; /* Offset for the fixed header */
+        padding: 20px;
+    }
+
+    /* Information Box (left side) */
+    .info-box {
+        flex: 1;
+        padding: 20px;
+        border: 4px solid rgb(81, 51, 249);
+        background-color: rgb(137, 119, 239);
+        max-width: 600px;
+        text-align: left;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Featured Image (right side) */
+    .featured-image {
+    flex-shrink: 0;
+    margin-left: 20px; /* Add a reasonable gap between the info box and the image */
+    width: 400px;
+    height: auto;
+    border: 5px solid #5133F9;
+    border-radius: 10px
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+    /* Footer */
+    .footer {
+        margin: 50px 0 20px 0;
+        text-align: center;
+        color: #fff;
+        font-size: 0.8rem;
+    }
+
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const fadeInElements = document.querySelectorAll(".fade-in");
+
+        const handleScroll = () => {
+            fadeInElements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                    el.classList.add("visible");
+                }
+            });
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        handleScroll();
+    });
+</script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="transparent-boy.gif" alt="Logo" class="logo">
+            <h1>WORLD WIDE BILLONES</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Aboutme.html">About me</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Hobbies.html">Hobbies/Awesome Stuff</a></li>
+                <li><a href="Special.html">Special Mentions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="info-box fade-in">
+            <h2>!Welcome!</h2>
+            <p>Henlo Evryone! Welcome to my website! Call me Rombo and come explore the website with me!</p>
+<br>
+            <h2>Rombo's Message</h2>
+            <p>Hello Visitor! I'm Rombo and in this website you will see the person who made me in the about page. Also you could see my proudest art work or sketches that is located in the Gallery. 
+                <br>
+                <br>
+ <p>Also thank you for your time browsing about my owner! He tried his best to make this website presentable as possible and he hoped you guys would love it :D </p>
+            </p>
+        </div>
+        <img src="c9a5a5fa-352a-4014-828e-20df7db1f1c6.jpeg" class="featured-image" alt="Image" >
+    </main>
+<br>
+    <img src="vaporwave-trippy.gif" alt="Window Purple" style="width:500px;height:500px;">
+
+    <div class="footer">
+        <h2></h2>
+        <p>This website was made by Aldrich Billones. This is his work for his Finals 1st term @2024</p>
+    </div>
+</body>
+</html>
+
+
+

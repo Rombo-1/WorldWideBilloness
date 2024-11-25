@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worldwidebillones</title>
+<link rel="icon" href="transparent-boy.gif" type="image/x-icon">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Give mee your Bodyy yeahaheahheaha */
+    body {
+        background: linear-gradient(rgb(168, 154, 248), rgb(55, 1, 127));
+        cursor: url(seaurchin.png), auto;
+        background-blend-mode: hard-light; 
+        color: #fff;
+        font-family: 'Press Start 2P', cursive;
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+    }
+
+   
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgb(168, 154, 248) url("muk-pokemon.gif") repeat;
+        background-size: 90px;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    header h1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #fff;
+        margin: 0;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img {
+        max-width: 59px;
+        margin-right: 10px;
+    }
+
+    /* navigation bar ni bakla */
+    nav ul {
+        list-style-type: none;
+        margin: 10px 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+        font-size: 1rem;
+        text-decoration: none;
+        transition: color 0.6s;
+    }
+
+    nav ul li a:hover {
+        color: #f8b0ff;
+    }
+
+    /*Main main main main mendoza */
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 150px; /* Offset for the fixed header */
+        padding: 20px;
+    }
+
+    /* Feet image */
+    .featured-image {
+        flex-shrink: 0;
+        margin-right: 20px; /* Add a reasonable gap between the image and the info box */
+        width: 500px;
+        height: auto;
+        border: 5px solid #5133F9;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Inporation box kung saan ung text */
+    .info-box {
+        flex: 1;
+        padding: 20px;
+        border: 4px solid rgb(81, 51, 249);
+        background-color: rgb(137, 119, 239);
+        max-width: 600px;
+        text-align: left;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .info-box2 {
+        flex: 1;
+        padding: 20px;
+        border: 4px solid rgb(81, 51, 249);
+        background-color: rgb(137, 119, 239);
+        max-width: 600px;
+        text-align: left;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 200px; 
+        padding: 20px;
+    }
+    .pics {
+    margin-right: 50px;
+    margin-left: 50px;
+
+    }
+ .pics img {
+        border-radius:10px;
+        box-shadow: 0 5px 6px rgba(1, 1, 1, 1)
+        height: auto;
+        width:200px;
+        margin-right: 10px;
+        margin-left: 40px;
+        margin: bottom 10px;
+    
+    }
+    .pics img:hover {
+        transform: scale (1.1);
+    }
+    /* Foot ni sonic  */
+    .footer {
+        margin: 50px 0 20px 0;
+        text-align: center;
+        color: #fff;
+        font-size: 0.8rem;
+    }
+
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+	
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const fadeInElements = document.querySelectorAll(".fade-in");
+
+        const handleScroll = () => {
+            fadeInElements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                    el.classList.add("visible");
+                }
+            });
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        handleScroll();
+    });
+</script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="transparent-boy.gif" alt="Logo" class="logo">
+            <h1>WORLD WIDE BILLONES</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Aboutme.html">About me</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Hobbies.html">Hobbies/Awesome Stuff</a></li>
+                <li><a href="Special.html">Special Mentions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <div class="info-box fade-in">
+            <h2>Hobbies</h2>
+            <br>
+            
+            <p>I like dancing, mostly watching Dance battle on my free time. I was apart of a dance group for my Intramurals back then Grade 12. </p>
+          
+            <br>
+            <br>
+        
+    
+        </div>
+
+   
+<br> <br>
+    </main>
+    <main>
+        
+
+        <video width="800" height="auto" controls>
+            <source src="bdcbdf6b-3058-4fea-a148-d5e7b1a1a6ad.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+        
+   
+
+    
+	<div class="divider"></div>
+	
+           
+    <br>
+
+
+    </div> 
+    <br>
+   
+</main>
+
+<main>
+<img src="colleen-ballinger-miranda-sings.gif" class="featured-image" alt="Image">
+        <div class="info-box fade-in">
+            <h2>Ukelele</h2>
+            <br>
+            
+            <p> I spent my time playing the ukelele with random favorite songs i find even though my voice is bad! :D </p>
+          
+            <br>
+            <br>
+        
+        </div>
+
+    </main>
+
+
+    <main>
+                <div class="info-box fade-in">
+                    <h2>Sketching Stuff</h2>
+                    <br>
+                    
+                    <p>Mostly I do random doodles and sketches traditionally (Im still learning and not confident on digital art) </p>
+                  
+                    <br>
+                    <br>
+                
+                </div>
+
+                <div class="pics">
+                    <img src="2f2544cc-f86f-4fd6-9999-1bb60a262a24.jpeg" alt="piks">
+                    <img src="3abc5f18-df2f-49e4-b94a-0b27dfb86760.jpeg" alt="piks">
+                    <img src="73850c91-77dd-45dd-9258-d20c354c2c57.jpeg" alt="piks">
+                    <img src="21009150-769b-4243-9d1e-569e88075c0a.jpeg" alt="piks">
+                    <img src="aeada461-eee2-49cf-b064-d940e90aa56d.jpeg" alt="piks">
+                    <img src="b1c13fae-13a3-4f15-869b-05dcf6bac179.jpeg" alt="piks">
+                    <img src="bd461bb3-97e1-4ad2-8b99-e40c082d4cf2.jpeg" alt="piks">
+                    <img src="c28dfe5e-33e0-4128-89db-6bf2b4544c15.jpeg" alt="piks">
+                    <img src="d3067b4f-7f00-486e-826e-af7545c40485.jpeg" alt="piks">
+                    <img src="d766912f-9922-467c-8dbb-b275c26e58ad.jpeg" alt="piks">
+                    <img src="ed8cd837-7c5b-4b22-9b20-41a3a960dc4d.jpeg" alt="piks">
+                    <img src="e0199e90-828d-4277-bf16-b968fda4176c.jpeg" alt="piks">
+                  
+                    </div>
+            </main>
+<br>
+    <img src="omori-omori-collective-murder.gif" alt="Window Purple" style="width:500px;height:px;">
+    <div class="footer">
+        <h2></h2>
+        <p>This website was made by Aldrich Billones. This is his work for his Finals 1st term @2024</p>
+    </div>
+</body>
+</html>
